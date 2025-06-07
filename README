@@ -1,0 +1,137 @@
+# CarroJÁ – Sua jornada rumo ao carro ideal começa aqui\!
+
+-----
+Importante:
+Os requisitos referentes a prints ou gif do funcionamento e à explicação das decisões técnicas e da experiência do usuário foram atendidos através do vídeo de apresentação disponibilizado no link abaixo.
+Acesse o vídeo da apresentação no Google Drive ou Youtube:  
+🔗 [Vídeo Apresentação CarroJÁ] https://youtu.be/rY3cqXEvLs8  OU  https://drive.google.com/file/d/1DCT0hcYYFm42ClheGT6B7szeZuA9Rd4Q/view?usp=sharing
+
+-----
+
+## Visão do Projeto
+
+O **CarroJÁ** é uma aplicação web inteligente desenvolvida para transformar a forma como os usuários buscam, comparam e escolhem seus veículos. Nossa plataforma oferece uma experiência acessível, personalizada e eficiente para encontrar e comprar automóveis, unindo tecnologia de ponta com uma interface amigável.
+
+Este projeto vai além da simples listagem de carros, buscando:
+
+  * **Compreender as preferências do usuário** através de filtros intuitivos.
+  * **Recomendar veículos ideais** com base no perfil do comprador.
+  * **Auxiliar com um chatbot inteligente** que fornece respostas e sugestões em linguagem natural.
+
+-----
+
+## Tecnologias Utilizadas
+
+  * **React**: Biblioteca JavaScript para construção da interface do usuário.
+  * **JavaScript (ES6+)**: Linguagem principal para desenvolvimento.
+  * **CSS3**: Estilização da aplicação.
+  * **HTML5**: Estrutura da aplicação.
+  * **JSON**: Armazenamento de dados estáticos dos veículos (arquivo `cars.json`).
+
+### APIs Externas
+
+  * **OpenAI API**: Integração com inteligência artificial para o assistente automotivo, gerando recomendações personalizadas.
+  * **Location API (configurada, não implementada)**: Para obtenção de dados geográficos, possivelmente para localização de veículos.
+
+### Bibliotecas e Pacotes
+
+  * **React Hooks** (`useState`, `useEffect`, `useRef`) para gerenciamento de estado e efeitos.
+  * **CSS Modules** para organização dos estilos por componente.
+  * **React Testing Library** para testes unitários.
+  * **Web Vitals** para monitoramento de performance.
+  * **Animações CSS** para efeitos visuais.
+  * **Google Fonts (Poppins)** para tipografia principal.
+
+-----
+
+# Plano de Negócios - CarroJÁ
+
+## Modelo de Negócios  
+O modelo de negócios do CarroJÁ será baseado principalmente em anúncios (ads), onde clientes (vendedores e concessionárias) pagam para atingir um público maior e ampliar suas vendas. Inicialmente, uma pequena taxa será cobrada sobre as vendas realizadas pela plataforma.
+
+No futuro, com o crescimento e consolidação da plataforma, será possível cobrar uma taxa para que lojistas e concessionárias anunciem seus veículos, enquanto os usuários continuam aproveitando todos os benefícios do site gratuitamente.
+
+## Estratégia de Aquisição de Usuários  
+A aquisição dos primeiros usuários será focada em oferecer uma inteligência artificial que facilite o processo para pessoas leigas no assunto. Muitas vezes o usuário quer apenas escolher um carro normal, mas não sabe por onde começar — a IA ajudará a guiar essa escolha.
+
+O marketing investirá na demonstração da capacidade da IA e seu aprimoramento constante. Futuramente, a IA poderá até mesmo atuar vendendo carros diretamente pela plataforma.
+
+Também serão firmadas parcerias com concessionárias locais para garantir bons negócios e variedade de opções aos usuários.
+
+## Estimativa de CAC (Custo de Aquisição de Cliente)  
+O foco será em tráfego pago, com investimento em influenciadores e artistas reconhecidos, como o Flow Podcast e canais com público adulto.
+
+Haverá também investimento em canais femininos, onde o interesse por carros não é tão forte. Nesse cenário, a IA será o diferencial para facilitar a compra e gerar confiança.
+
+## Proposta de LTV (Lifetime Value)  
+Para maximizar o valor do cliente ao longo do tempo, serão oferecidas assinaturas para grandes vendedores, garantindo receita constante.
+
+Outra ideia é desenvolver IAs personalizadas para vendedores, que possam atender clientes de forma autônoma e até fechar negócios sozinhas.
+
+No futuro, a plataforma poderá usar blockchain e smart contracts para reduzir burocracia e custos, aumentando a eficiência.
+
+## Monetização Viável  
+As fontes de receita incluem:
+
+- Vendas feitas por IA;
+- Anúncios pagos por clientes para ampliar alcance;
+- Taxas sobre vendas realizadas na plataforma;
+- Assinaturas para acesso a IA personalizada;
+- Aluguel de veículos com cobrança de pequena taxa;
+- Uso de smart contracts via blockchain para facilitar e baratear vendas.
+
+## Estratégia de Retenção de Usuários  
+Para manter o usuário engajado, serão enviadas notificações personalizadas quando um carro que ele procura, dentro da faixa de preço desejada, for listado no site.
+
+Para vendedores, haverá um programa de fidelidade, reduzindo taxas conforme o volume de vendas aumenta — assim, quanto mais vender, menos paga, estimulando o uso constante.
+
+A IA terá papel fundamental na retenção, facilitando as vendas, oferecendo suporte ativo e até assumindo a comunicação com clientes em nome dos vendedores.
+
+
+
+
+
+
+## Pré-requisitos para execução
+
+Para rodar o projeto localmente, certifique-se de ter instalado em sua máquina:
+
+- Node.js (versão 16 ou superior recomendada)  
+- npm (gerenciador de pacotes que vem com o Node.js)  
+
+Além disso, caso utilize a integração com a OpenAI API, será necessário configurar a chave de API (API Key) em seu ambiente para que a funcionalidade do assistente inteligente funcione corretamente.
+
+### Configurando a chave da OpenAI API
+
+1. Gere sua chave no site da OpenAI:  
+   [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
+
+2. Na raiz do projeto, crie um arquivo chamado `.env` (se ainda não existir).
+
+3. Dentro do `.env`, adicione a seguinte linha, substituindo pelo valor da sua chave:
+
+   ```env
+   REACT_APP_OPENAI_KEY=sua_chave_aqui
+
+
+
+## Como executar
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/carroja.git
+cd carroja
+Instale as dependências:
+
+bash
+Copiar
+Editar
+npm install
+Inicie a aplicação:
+
+bash
+Copiar
+Editar
+npm start
+A aplicação estará disponível em http://localhost:3000.
